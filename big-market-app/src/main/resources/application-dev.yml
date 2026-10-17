@@ -30,6 +30,13 @@ spring:
     connection-test-query: SELECT 1
   type: com.zaxxer.hikari.HikariDataSource
 
+# Redisson 配置（项目自定义前缀 redis.sdk.config，连接 Docker 里的 redis7 容器）
+redis:
+  sdk:
+    config:
+      host: 127.0.0.1
+      port: 6379
+
 mybatis:
   mapper-locations: classpath:/mybatis/mapper/*.xml
   config-location:  classpath:/mybatis/config/mybatis-config.xml
