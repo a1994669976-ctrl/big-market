@@ -36,5 +36,14 @@ build/
 
 ### Mac OS ###
 .DS_Store
-/data/
+
+### 日志文件 ###
+**/data/log/
+*.log
+*.log.*
+
+### IDE ###
 /.idea/
+*.iml
+*.iws
+*.ipr
